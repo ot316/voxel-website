@@ -137,7 +137,7 @@ function test_input($data)
                             $message = '<h2>Message:</h2><p>'  . $message . '</p>';
                             $mail = new PHPMailer\PHPMailer\PHPMailer(true);
                             $mail->isSMTP();
-                            //$mail->SMTPDebug = 1;
+                            //$mail->SMTPDebug = 3;
                             $mail->CharSet = 'UTF-8';
                             $mail->SMTPAuth = true;
                             $mail->SMTPSecure = 'tls';
